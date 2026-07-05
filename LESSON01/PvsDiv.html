@@ -1,0 +1,51 @@
+<!-- (p, h1, h2, h3, h4,...) vs (div, header, footer, section, article,...) -->
+
+<!-- Nhìn 2 vd sau đây rất giống nhau -->
+<p> Thẻ p chứa 1 đoạn văn</p>
+<div>Thẻ div chứa 1 đoạn văn</div>
+
+<!--div  (division)-->
+<div>
+    <div>
+        <div>Thẻ div được lồng bên trong thẻ div</div>
+        <p>Thẻ p được lồng bên trong thẻ div</p>
+    </div>
+</div>
+
+<!--p (paragraph)-->
+<p>
+<div>Thẻ div được nhúng trong thẻ p</div>
+<p>Thẻ p được nhúng trong thẻ p</p>
+</p>
+
+<!-- 
+Code sau khi được biên dịch sẽ trở thành:
+<p></p>
+<div>Thẻ div được nhúng trong thẻ p</div>
+<p>Thẻ p được nhúng trong thẻ p</p>
+<p></p>
+-->
+
+<!-- Trong thẻ p chỉ chứa được các inline element như span, a, strong,... -->
+
+<p>
+    <b>Bold</b>
+    <i>Italic</i>
+    <em>Emphasized</em>
+    <strong>Strong</strong>
+    <u>Underlined</u>
+    <label>Label</label>
+</p>
+
+<h1>
+    <h1>Heading 1</h1>
+    <div>Division</div>
+</h1>
+
+<!-- 
+Code sau khi được biên dịch sẽ trở thành:
+<h1>  </h1>
+<h1>Heading 1</h1>
+<div>Division</div>
+
+-->
