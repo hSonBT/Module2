@@ -7,9 +7,39 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LESSON01", "LESSON01", "{7C
 		LESSON01\list.html = LESSON01\list.html
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LESSON02", "LESSON02", "{B66202F2-E8C6-4D99-830F-1988353D8AE5}"
+	ProjectSection(SolutionItems) = preProject
+		LESSON02\Form.html = LESSON02\Form.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LESSON03", "LESSON03", "{EF6AA48A-E814-4563-B371-44FF43818D90}"
+	ProjectSection(SolutionItems) = preProject
+		LESSON03\Store.sql = LESSON03\Store.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LESSON04", "LESSON04", "{6AC8EE60-4D58-4D10-A93B-A5FAD0F4A90A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson04_OOP", "Lesson04_OOP\Lesson04_OOP.csproj", "{9F189498-41D7-4DD6-8621-D0E442FD79D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{ADA04D44-6430-45EF-A5EC-1DFD138B8278}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F189498-41D7-4DD6-8621-D0E442FD79D7} = {6AC8EE60-4D58-4D10-A93B-A5FAD0F4A90A}
+		{ADA04D44-6430-45EF-A5EC-1DFD138B8278} = {6AC8EE60-4D58-4D10-A93B-A5FAD0F4A90A}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F189498-41D7-4DD6-8621-D0E442FD79D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F189498-41D7-4DD6-8621-D0E442FD79D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F189498-41D7-4DD6-8621-D0E442FD79D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F189498-41D7-4DD6-8621-D0E442FD79D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADA04D44-6430-45EF-A5EC-1DFD138B8278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADA04D44-6430-45EF-A5EC-1DFD138B8278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADA04D44-6430-45EF-A5EC-1DFD138B8278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADA04D44-6430-45EF-A5EC-1DFD138B8278}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

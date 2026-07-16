@@ -1,0 +1,56 @@
+﻿@* Khai báo kiểu dữ liệu model mà View này nhận từ Controller.
+   Dùng int? (nullable int) vì lần load đầu (GET) chưa có kết quả, model sẽ là null;
+   sau khi submit form (POST), Controller truyền total (int) vào, model sẽ có giá trị.
+   LƯU Ý: khi khai báo dùng "model" chữ thường (@model), nhưng khi sử dụng để truy cập
+   giá trị thì phải viết "Model" chữ M hoa (đây là 2 từ khoá khác nhau trong Razor). *@
+@model int?
+
+@* Tag Helper asp-action / asp-controller: ASP.NET Core tự sinh ra thuộc tính action="..."
+   dựa theo tên Action/Controller, thay vì phải gõ URL cứng ("/Calculate/Sum").
+   Ưu điểm: nếu sau này đổi route, không cần sửa lại View. *@
+<form asp-action="Sum" asp-controller="Calculate" method="post">
+    <div>
+        <label for="num1">Nhập số thứ nhất</label>
+        <input type="number" id="num1" name="num1"/>
+    </div>
+    <div>
+        <label for="num2">Nhập số thứ hai</label>
+        <input type="number" id="num2" name="num2"/>
+    </div>
+
+    @* Sử dụng model: truy cập giá trị model đã khai báo phía trên qua từ khoá "Model".
+       Chỉ hiển thị khi Model khác null, tức là đã có kết quả được Controller trả về sau khi submit. *@
+    @if (Model != null)
+    {
+        <p>
+            Tổng: <b>@Model</b>
+        </p>
+    }
+
+    <button type="submit">Tính tổng</button>
+</form>
+
+@* ===== Version cũ: viết bằng HTML thuần, không dùng Tag Helper =====
+   Vẫn hoạt động đúng vì form không có action nên tự submit về URL hiện tại,
+   nhưng nếu đổi route thì phải tự sửa tay, không tự động như bản asp-action ở trên.
+
+<form method="post">
+    <div>
+        <label for="num1">Nhập số thứ nhất</label>
+        <input type="number" id="num1" name="num1"/>
+    </div>
+    <div>
+        <label for="num2">Nhập số thứ hai</label>
+        <input type="number" id="num2" name="num2"/>
+    </div>
+
+    @if (Model != null)
+    {
+        <p>
+            Tổng: <b>@Model</b>
+        </p>
+    }
+
+    <button type="submit">Tính tổng</button>
+</form>
+*@
