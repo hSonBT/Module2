@@ -1,0 +1,64 @@
+﻿@model Product
+
+
+
+<div asp-validation-summary="All"></div>
+<form method="post" enctype="multipart/form-data">
+    @* Category *@
+    <div class="row">
+        <label class="form-label col-2" asp-for="CategoryId">Category</label>
+        <div>
+            <select class="form-control col-10"  asp-for="CategoryId" asp-items="@ViewBag.Categories"></select>
+        </div>
+    </div>
+    <div class="row">
+        <label class="form-label col-2" asp-for="ProductName">Product Name</label>
+        <div>
+            <input class="form-control col-10" type="text" asp-for="ProductName">
+        </div>
+    </div>
+    @* Description *@
+    <div class="row">
+        <label class="form-label col-2" asp-for="Description">Description </label>
+        <div>
+            <textarea class="form-control col-10" asp-for="Description"></textarea>
+        </div>
+    </div>
+    @* Content *@
+    <div class="row">
+        <label class="form-label col-2" asp-for="Content">Content</label>
+        <div>
+            <textarea class="form-control col-10" asp-for="Content"></textarea>
+        </div>
+    </div>
+
+    @* Price *@
+    <div class="row">
+        <label class="form-label col-2" asp-for="Price">Price</label>
+        <div>
+            <input class="form-control col-10" type="number" asp-for="Price">
+        </div>
+    </div>
+    @* Quantity *@
+    <div class="row">
+        <label class="form-label col-2" asp-for="Quantity">Quantity</label>
+        <div>
+            <input class="form-control col-10" type="number" asp-for="Quantity">
+        </div>
+    </div>
+
+    @* ImageUrl *@
+    <div class="row">
+        <label class="form-label col-2">Image</label>
+        <div>
+            <input class="form-control col-10" type="file" name="file" id="file">
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-10 offset-2">
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+            <a class="btn btn-outline-secondary" asp-controller="Product" asp-action="Index">Cancel</a>
+        </div>
+    </div>
+</form>

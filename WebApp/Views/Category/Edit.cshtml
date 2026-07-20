@@ -1,0 +1,21 @@
+﻿@using WebApp.Models
+@model Category
+
+<form asp-controller="Category" asp-action="Edit" method="post">
+    <input type="hidden" asp-for="@Model.CategoryId">
+    <div class="row mb-1">
+        <label class="form-label col-2">Category Name</label>
+        <div class="col-10">
+            <input type="text" asp-for="@Model.CategoryName">
+        </div>
+        @* <input type="text" name="CategoryName" id="CategoryName"> *@
+        @*
+            name: CategoryName , categoryName đều được (case-insensitive).
+            category_name: không được
+        *@
+    </div>
+    <div>
+        <button class="offset-2 btn btn-primary">Save change</button>
+        <a class="btn btn-outline-primary" asp-controller="Category" asp-action="Index">Cancel</a>
+    </div>
+</form>

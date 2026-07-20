@@ -1,0 +1,44 @@
+﻿@model Product
+
+<h3>Confirm Delete</h3>
+
+<form method="post">
+    <input type="hidden" asp-for="ProductId">
+    <input type="hidden" asp-for="ImageUrl">
+
+    <table class="table table-bordered">
+        <tbody>
+        <tr>
+            <th rowspan="5">
+                <img class="w-100 object-fit-cover" src="/images/@Model.ImageUrl" alt="@Model.ProductName">
+            </th>
+            <th>Name</th>
+            <td>@Model.ProductName</td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td>@Model.Description</td>
+        </tr>
+        <tr>
+            <th>Content</th>
+            <td>@Model.Content</td>
+        </tr>
+        <tr>
+            <th>Price</th>
+            <td>@Model.Price</td>
+        </tr>
+        <tr>
+            <th>Quantity</th>
+            <td>@Model.Quantity</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="3" class="text-center">
+                <button type="submit" class="btn btn-danger">Are you sure Delete</button>
+                <a class="btn btn-outline-secondary" asp-controller="Product" asp-action="Index">Cancel</a>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+</form>
