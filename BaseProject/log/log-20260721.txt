@@ -1,0 +1,26 @@
+[2026-07-21 00:00:17.986 +07:00] [ERR] An unhandled has occurred
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Attachment" for actions - BaseProject.Shared.Controllers.AttachmentController.Upload (BaseProject),BaseProject.Shared.Controllers.AttachmentController.GetByAttachable (BaseProject),BaseProject.Shared.Controllers.AttachmentController.Download (BaseProject),BaseProject.Shared.Controllers.AttachmentController.Delete (BaseProject). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at BaseProject.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\sonly\Desktop\workspace\NET21\Module2\BaseProject\Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 25
+][2026-07-21 00:01:03.478 +07:00] [ERR] An unhandled has occurred
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Attachment" for actions - BaseProject.Shared.Controllers.AttachmentController.Upload (BaseProject),BaseProject.Shared.Controllers.AttachmentController.GetByAttachable (BaseProject),BaseProject.Shared.Controllers.AttachmentController.Download (BaseProject),BaseProject.Shared.Controllers.AttachmentController.Delete (BaseProject). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at BaseProject.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\sonly\Desktop\workspace\NET21\Module2\BaseProject\Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 25
+][2026-07-21 00:01:06.479 +07:00] [ERR] An unhandled has occurred
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Attachment" for actions - BaseProject.Shared.Controllers.AttachmentController.Upload (BaseProject),BaseProject.Shared.Controllers.AttachmentController.GetByAttachable (BaseProject),BaseProject.Shared.Controllers.AttachmentController.Download (BaseProject),BaseProject.Shared.Controllers.AttachmentController.Delete (BaseProject). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at BaseProject.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\sonly\Desktop\workspace\NET21\Module2\BaseProject\Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 25
+][2026-07-21 00:01:06.681 +07:00] [WRN] Failed to determine the https port for redirect.
+]
