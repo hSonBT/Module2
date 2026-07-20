@@ -5,6 +5,7 @@ using MediatR;
 namespace BaseProject.Features.Devices.Handlers;
 
 public class DeleteDeviceCommandHandler : IRequestHandler<DeleteDeviceCommand, bool>
+public class DeleteDeviceHandler: IRequestHandler<DeleteDeviceCommand, bool>
 {
     private readonly MyAppDbContext _dbContext;
     private readonly ILogger<DeleteDeviceCommandHandler> _logger;
@@ -31,4 +32,5 @@ public class DeleteDeviceCommandHandler : IRequestHandler<DeleteDeviceCommand, b
             return true;
         }, cancellationToken);
     }
+    private readonly ILogger<DeleteDeviceHandler> _logger;
 }
